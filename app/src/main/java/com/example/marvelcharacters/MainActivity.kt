@@ -72,11 +72,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun getCharacterData(query: String = "" ){
         val encodedQuery = URLEncoder.encode(query, "UTF-8")
-        val timestamp = System.currentTimeMillis()
         val url = if (query.isNotEmpty()){
-            "https://gateway.marvel.com/v1/public/characters?nameStartsWith=$encodedQuery&limit=1&ts=$timestamp&apikey=0bff0d5f2a8aef9c2fa3c961be718c51&hash=715dd55a201345eff232ce852580d415"
+            "https://gateway.marvel.com/v1/public/characters?nameStartsWith=$encodedQuery&limit=1&ts=1&apikey=0bff0d5f2a8aef9c2fa3c961be718c51&hash=715dd55a201345eff232ce852580d415"
         } else  {
-            "https://gateway.marvel.com/v1/public/characters?limit=1&offset=$offset&ts=$timestamp&apikey=0bff0d5f2a8aef9c2fa3c961be718c51&hash=715dd55a201345eff232ce852580d415"
+            "https://gateway.marvel.com/v1/public/characters?limit=1&offset=$offset&ts=1&apikey=0bff0d5f2a8aef9c2fa3c961be718c51&hash=715dd55a201345eff232ce852580d415"
         }
         Log.d("GeneratedURL", "Requesting URL: $url")
 
