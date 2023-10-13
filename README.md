@@ -27,24 +27,29 @@ The following REQUIRED features are completed:
 The following STRETCH features are implemented:
 
 - [x] Add a query to the API request
-  - The query I added is **FILL IN HERE**
+  - The query I added is ** "https://gateway.marvel.com/v1/public/characters?nameStartsWith=$encodedQuery&limit=1&ts=$timestamp&apikey=0bff0d5f2a8aef9c2fa3c961be718c51&hash=715dd55a201345eff232ce852580d415"**
 - [x] Build a UI to allow users to add that query
 
 The following EXTRA features are implemented:
 
-- [ ] List anything else that you added to improve the app!
+- [x] List anything else that you added to improve the app!
+    -[x]Toast message added when no search result is found
+    -[x] Two more TextViews on top of the one imageview and two texviews.
+    -[x]Eclipse feature added to comics name to save space. A maximum of two lines first show in the comics name TextView.
+        Users can view more details by clicking ...
+        Users can return to the maximum two-line textview of the comics name by clicking the text of comics names again.
 
 ## API Choice
 
-My chosen API for this project is **enter here**.
+My chosen API for this project is **Marvel API**.
 
 ## Video Demo
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/cNRFx0V"  ><a href="//imgur.com/a/cNRFx0V">demoMarvelCharacter</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-GIF created with **your chosen GIF tool**
+GIF created with **Kap**
 
 <!-- Recommended tools:
 - [Kap](https://getkap.co/) for macOS
@@ -57,7 +62,7 @@ Here's a place for any other notes on the app, it's creation process, or what yo
 
 ## License
 
-Copyright **yyyy** **your name**
+Copyright **2023** **Yan Lu**
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
